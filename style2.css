@@ -71,7 +71,9 @@ body {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+   margin-bottom: 2rem;  /* or 1.5rem, 3rem—whatever you like */
 }
+
 
 .use-case img {
   width: 80px;
