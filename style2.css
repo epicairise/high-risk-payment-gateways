@@ -20,6 +20,14 @@ body {
   font-weight: 400;
 }
 
+.page-frame p,
+.page-frame li,
+.faq p,
+.faq summary,
+.prompt-block li {
+  font-weight: 400 !important;
+}
+
 /* ==== Hero Section ====*/
 .hero-img {
   max-width: 860px;
