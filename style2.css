@@ -60,6 +60,12 @@ body {
   border-radius: 10px;
 }
 
+#tools {
+ 
+  max-width: 600px;    /* same width as your old 700px blocks */
+  margin: 2rem auto;   /* vertical spacing + auto‑center */
+}
+
 /* ==== Use‑Case Cards ==== */
 .use-case {
   display: flex;
@@ -102,11 +108,7 @@ body {
 
 
 }
-#tools {
- 
-  max-width: 600px;    /* same width as your old 700px blocks */
-  margin: 2rem auto;   /* vertical spacing + auto‑center */
-}
+
 
 /* ==== Button Styles ==== */
 .cta-button,
