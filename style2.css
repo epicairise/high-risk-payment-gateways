@@ -103,10 +103,8 @@ body {
 
 }
 #tools {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;      /* spacing between each child */
-   max-width: 650px;    /* same width as your old 700px blocks */
+ 
+  max-width: 600px;    /* same width as your old 700px blocks */
   margin: 2rem auto;   /* vertical spacing + auto‑center */
 }
 
