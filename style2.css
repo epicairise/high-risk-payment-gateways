@@ -42,10 +42,11 @@ body {
   color: #111827;
 }
 
+
 .hero p {
-  font-size: 1rem;
+  font-size: 1.15rem;    /* from 1rem → 1.125rem (18px) */
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem; /* a little extra breathing room */
   color: #374151;
 }
 
