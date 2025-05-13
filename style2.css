@@ -57,7 +57,8 @@ body {
 }
 
 .label {
-  font-weight: 500;
+  font-weight: 400 !important;
+  font-family: 'Space Mono', monospace;
   color: #374151;
 }
 
