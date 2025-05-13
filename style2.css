@@ -1,10 +1,7 @@
-/* style2.css — Final Consolidated Styles */
-
-
+/* 1) Font import (single line, no breaks!) */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
 
-
-/* ==== Base Layout ====*/
+/* ==== Base ==== */
 body {
   font-family: 'Outfit', sans-serif;
   background: #f9fafb;
@@ -18,45 +15,35 @@ body {
 .page-frame {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 1rem;
-  font-weight: 400;
+  padding: 1rem;
 }
 
-.page-frame > p:first-of-type {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
-}
-
-.page-frame p,
-.page-frame li,
-.faq p,
-.faq summary,
-.prompt-block li {
-  font-weight: 400 !important;
-}
-
-
-
-/* ==== Hero Card ==== */
-.hero {
-  background: #fff;
+/* ==== Card Boilerplate ==== */
+.card {
+  background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.04);
   padding: 2rem 1.5rem;
-  margin: 2rem auto;
-  max-width: 860px;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==== Hero Specific ==== */
+.hero {
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2rem;        /* bump up title size */
+  font-size: 2.25rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
-  line-height: 1.3;
   font-weight: 600;
+  color: #111827;
 }
 
 .hero p {
-  font-size: 1rem;        /* match product block text */
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #374151;
@@ -66,45 +53,14 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero-img {
-  margin: 0 auto;
-  max-width: 100%;        /* now full‑width of the card */
-}
-
 .hero-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-
-.label {
-  font-weight: 400 !important;
-  font-family: 'Space Mono', monospace;
-  color: #374151;
-}
-
-
-/* ==== Override Bold Elements Globally ==== */
-strong, b {
-  font-weight: 400 !important;
-}
-
-/* ==== Tool Section + Cards ====*/
-#tools,
-.faq,
-.leadbox,
-.prompt-block {
-  max-width: 700px;
-  margin: 2rem auto;
-}
-
+/* ==== Use‑Case Cards ==== */
 .use-case {
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  padding: 2rem 1.5rem;
-  margin-bottom: 2rem;
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
@@ -112,9 +68,7 @@ strong, b {
 
 .use-case img {
   width: 80px;
-  height: auto;
   flex-shrink: 0;
-  margin-top: 0.25rem;
 }
 
 .use-case h3 {
@@ -125,17 +79,17 @@ strong, b {
 }
 
 .use-case p {
-  margin: 0.25rem 0;
   font-family: 'Space Mono', monospace;
   font-size: 0.95rem;
+  margin: 0 0 0.5rem;
   color: #374151;
   font-weight: 400;
 }
 
 .use-case ul {
-  list-style: none;
-  padding-left: 0;
   margin: 0.5rem 0 1rem;
+  padding: 0;
+  list-style: none;
 }
 
 .use-case li {
@@ -143,71 +97,68 @@ strong, b {
   font-size: 0.95rem;
   margin-bottom: 0.35rem;
   color: #374151;
-  font-weight: 400;
 }
 
+/* ==== Button Styles ==== */
+.cta-button,
 .use-case-cta {
   display: inline-block;
   background: linear-gradient(90deg, #007acc, #00c7b7);
-  color: #ffffff;
-  font-weight: 600;
+  color: #fff;
   text-decoration: none;
-  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-size: 0.95rem;
-  font-family: 'Outfit', sans-serif;
-  transition: background 0.2s ease;
+  transition: background 0.2s;
 }
 
+.cta-button:hover,
 .use-case-cta:hover {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
-/* ==== Prompt Block ====*/
-.prompt-block {
+/* ==== Prompt, FAQ, Leadbox ==== */
+.prompt-block,
+.faq,
+.leadbox {
   background: #eef4f8;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 12px;
-  font-weight: 400;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.prompt-block h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.prompt-block ul {
-  padding-left: 1.25rem;
-}
-
-/* ==== FAQ ====*/
-.faq {
-  background: #eef4f8;
-  padding: 2rem;
-  border-radius: 12px;
-  font-weight: 400;
-}
-
+.prompt-block h2,
 .faq h2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.prompt-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
 }
 
 .faq details {
   margin-bottom: 1rem;
 }
 
-/* ==== Email Leadbox ====*/
 .leadbox {
-  background: #eef4f8;
-  padding: 2rem;
-  border-radius: 12px;
   text-align: center;
-  font-weight: 400;
 }
 
 .leadbox h3 {
-  margin-top: 0;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.leadbox p {
+  margin: 0 0 1rem;
+  color: #374151;
 }
 
 .leadbox input[type="email"] {
@@ -222,20 +173,20 @@ strong, b {
 
 .leadbox button {
   padding: 0.6rem 1.25rem;
-  background-color: #007acc;
-  color: white;
+  background: #007acc;
+  color: #fff;
   border: none;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
 }
 
-/* ==== Footer ====*/
+/* ==== Footer ==== */
 footer {
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 3rem;
   color: #555;
+  margin: 3rem 0 1rem;
 }
 
 footer a {
@@ -244,24 +195,18 @@ footer a {
   text-decoration: none;
 }
 
-/* ==== Responsive ====*/
-@media (max-width: 500px) {
+/* ==== Responsive ==== */
+@media (max-width: 600px) {
   .use-case {
     flex-direction: column;
     text-align: center;
   }
-
   .use-case img {
     margin: 0 auto 1rem;
   }
-
-  .leadbox input[type="email"] {
-    width: 100%;
-    margin-bottom: 1rem;
-    display: block;
-  }
-
+  .leadbox input[type="email"],
   .leadbox button {
     width: 100%;
+    margin: 0 0 1rem;
   }
 }
