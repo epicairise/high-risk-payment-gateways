@@ -1,6 +1,12 @@
 /* style2.css — Final Consolidated Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Space+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?
+  family=Outfit:wght@400;600;700
+  &family=Space+Mono:wght@400;700
+  &display=swap');
+
+
 
 /* ==== Base Layout ====*/
 body {
