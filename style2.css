@@ -10,12 +10,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .page-frame {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 1rem;
+  font-weight: 400;
 }
 
 /* ==== Hero Section ====*/
@@ -85,6 +87,7 @@ body {
   font-family: 'Space Mono', monospace;
   font-size: 0.95rem;
   color: #374151;
+  font-weight: 400;
 }
 
 .use-case ul {
@@ -98,6 +101,7 @@ body {
   font-size: 0.95rem;
   margin-bottom: 0.35rem;
   color: #374151;
+  font-weight: 400;
 }
 
 .use-case-cta {
@@ -122,6 +126,7 @@ body {
   background: #eef4f8;
   padding: 2rem;
   border-radius: 12px;
+  font-weight: 400;
 }
 
 .prompt-block h2 {
@@ -138,6 +143,7 @@ body {
   background: #eef4f8;
   padding: 2rem;
   border-radius: 12px;
+  font-weight: 400;
 }
 
 .faq h2 {
@@ -155,6 +161,7 @@ body {
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
+  font-weight: 400;
 }
 
 .leadbox h3 {
