@@ -56,6 +56,12 @@ body {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
+/* ==== Override Bold Elements ==== */
+strong,
+b {
+  font-weight: 400 !important;
+}
+
 /* ==== Tool Section + Cards ====*/
 #tools,
 .faq,
