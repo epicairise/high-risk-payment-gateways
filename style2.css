@@ -45,14 +45,12 @@ body {
 
 .hero p {
  font-family: 'Space Mono', monospace;
-  font-size: 1.105rem;
+  font-size: 1.005rem;
   margin: 0 0 0.5rem;
   margin-bottom: 1.75rem; /* a little extra breathing room */
   color: #374151;
   font-weight: 400;
 }
-
- 
 
 .hero .cta-button {
   margin-bottom: 2rem;
