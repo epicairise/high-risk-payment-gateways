@@ -1,3 +1,5 @@
+/* Typography & Base Layout */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Space+Mono&display=swap');
 
 body {
   font-family: 'Outfit', sans-serif;
@@ -8,15 +10,17 @@ body {
   line-height: 1.6;
 }
 
+/* Central Container */
 .page-container {
   max-width: 680px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  background: #fff;
 }
 
-/* Container Spacing */
+/* Section Layouts */
 #tools {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
 /* Card Base */
@@ -84,7 +88,7 @@ body {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
-/* Section Titles (like “💊 CBD-Focused Processors”) */
+/* Section Headings */
 #tools h2 {
   text-align: center;
   margin: 3rem 0 1rem;
@@ -92,7 +96,68 @@ body {
   color: #111827;
 }
 
-/* Responsive Tuning */
+/* Search Prompts, FAQ, Email Opt-In */
+.prompt-block,
+.faq,
+.leadbox {
+  background: #eef4f8;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+.prompt-block h2,
+.faq h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.prompt-block ul {
+  padding-left: 1.25rem;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+}
+
+.leadbox h3 {
+  margin-top: 0;
+}
+
+.leadbox input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+.leadbox button {
+  padding: 0.6rem 1.25rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  color: #555;
+}
+
+footer a {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
 @media (max-width: 500px) {
   .use-case {
     padding: 1.25rem 1rem;
@@ -110,5 +175,15 @@ body {
   .use-case-cta {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
+  }
+
+  .leadbox input[type="email"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .leadbox button {
+    width: 100%;
   }
 }
