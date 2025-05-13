@@ -56,6 +56,12 @@ body {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
+.label {
+  font-weight: 500;
+  color: #374151;
+}
+
+
 /* ==== Override Bold Elements Globally ==== */
 strong, b {
   font-weight: 400 !important;
