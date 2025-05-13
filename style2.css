@@ -1,6 +1,8 @@
-/* Typography & Base Layout */
+/* style2.css — Final Consolidated Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Space+Mono&display=swap');
 
+/* ==== Base Layout ====*/
 body {
   font-family: 'Outfit', sans-serif;
   background: #f9fafb;
@@ -10,57 +12,85 @@ body {
   line-height: 1.6;
 }
 
-/* Central Container */
-.page-container {
-  max-width: 680px;
+.page-frame {
+  max-width: 860px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  background: #fff;
+  padding: 0 1rem;
 }
 
-/* Section Layouts */
-#tools {
-  padding: 2rem 0;
+/* ==== Hero Section ====*/
+.hero-img {
+  max-width: 860px;
+  margin: 2rem auto;
+  text-align: center;
 }
 
-/* Card Base */
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #007acc, #00c7b7);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #005ea6, #00a49a);
+}
+
+/* ==== Tool Section + Cards ====*/
+#tools,
+.faq,
+.leadbox,
+.prompt-block {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
 .use-case {
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
   padding: 2rem 1.5rem;
-  margin: 1.5rem auto;
-  max-width: 640px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
-.use-case:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
-
-/* Logo */
 .use-case img {
-  max-width: 100%;
-  width: 140px;
+  width: 80px;
   height: auto;
-  margin: 0 auto 1rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
 }
 
-/* Headline */
 .use-case h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.5rem;
   color: #111827;
 }
 
-/* Bullet List */
+.use-case p {
+  margin: 0.25rem 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
 .use-case ul {
   list-style: none;
   padding-left: 0;
-  margin: 0 0 1.25rem;
+  margin: 0.5rem 0 1rem;
 }
 
 .use-case li {
@@ -70,7 +100,6 @@ body {
   color: #374151;
 }
 
-/* CTA Button */
 .use-case-cta {
   display: inline-block;
   background: linear-gradient(90deg, #007acc, #00c7b7);
@@ -88,26 +117,14 @@ body {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
-/* Section Headings */
-#tools h2 {
-  text-align: center;
-  margin: 3rem 0 1rem;
-  font-size: 1.25rem;
-  color: #111827;
-}
-
-/* Search Prompts, FAQ, Email Opt-In */
-.prompt-block,
-.faq,
-.leadbox {
+/* ==== Prompt Block ====*/
+.prompt-block {
   background: #eef4f8;
   padding: 2rem;
   border-radius: 12px;
-  margin-top: 3rem;
 }
 
-.prompt-block h2,
-.faq h2 {
+.prompt-block h2 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -116,8 +133,28 @@ body {
   padding-left: 1.25rem;
 }
 
+/* ==== FAQ ====*/
+.faq {
+  background: #eef4f8;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.faq h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
 .faq details {
   margin-bottom: 1rem;
+}
+
+/* ==== Email Leadbox ====*/
+.leadbox {
+  background: #eef4f8;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .leadbox h3 {
@@ -130,6 +167,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   width: 70%;
+  max-width: 320px;
   margin-right: 0.5rem;
 }
 
@@ -143,7 +181,7 @@ body {
   cursor: pointer;
 }
 
-/* Footer */
+/* ==== Footer ====*/
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -157,24 +195,15 @@ footer a {
   text-decoration: none;
 }
 
-/* Responsive */
+/* ==== Responsive ====*/
 @media (max-width: 500px) {
   .use-case {
-    padding: 1.25rem 1rem;
+    flex-direction: column;
+    text-align: center;
   }
 
   .use-case img {
-    width: 100px;
-    margin-bottom: 0.75rem;
-  }
-
-  .use-case h3 {
-    font-size: 1rem;
-  }
-
-  .use-case-cta {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    margin: 0 auto 1rem;
   }
 
   .leadbox input[type="email"] {
