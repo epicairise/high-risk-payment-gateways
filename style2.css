@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 
-
-
 /* ==== Base Layout ====*/
 body {
   font-family: 'Outfit', sans-serif;
@@ -24,6 +22,11 @@ body {
   font-weight: 400;
 }
 
+.page-frame > p:first-of-type {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
 .page-frame p,
 .page-frame li,
 .faq p,
@@ -32,33 +35,48 @@ body {
   font-weight: 400 !important;
 }
 
-/* ==== Hero Section ====*/
-.hero-img {
-  max-width: 860px;
+
+
+/* ==== Hero Card ==== */
+.hero {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
   margin: 2rem auto;
+  max-width: 860px;
   text-align: center;
 }
 
+.hero h1 {
+  font-size: 2rem;        /* bump up title size */
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1rem;        /* match product block text */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+.hero .cta-button {
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  margin: 0 auto;
+  max-width: 100%;        /* now full‑width of the card */
+}
+
 .hero-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.cta-button {
-  display: inline-block;
-  background: linear-gradient(90deg, #007acc, #00c7b7);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 1rem;
-}
-
-.cta-button:hover {
-  background: linear-gradient(90deg, #005ea6, #00a49a);
-}
 
 .label {
   font-weight: 400 !important;
