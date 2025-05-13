@@ -101,7 +101,7 @@ body {
 }
 
 #tools {
-  max-width: 680px;    /* same width as your old 700px blocks */
+  max-width: 650px;    /* same width as your old 700px blocks */
   margin: 2rem auto;   /* vertical spacing + auto‑center */
 }
 
