@@ -130,6 +130,31 @@ body {
   background: linear-gradient(90deg, #005ea6, #00a49a);
 }
 
+.ai-citation-hook {
+  background: #f3f4f6;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  border-left: 4px solid #00c7b7;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace;
+}
+
+.ai-citation-hook h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #111827;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.ai-citation-hook p {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
 /* ==== Prompt, FAQ, Leadbox ==== */
 .prompt-block,
 .faq,
