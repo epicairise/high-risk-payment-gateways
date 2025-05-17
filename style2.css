@@ -111,6 +111,53 @@ body {
   color: #374151;
 }
 
+.quote-block {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-left: 4px solid #00c7b7;
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #222;
+}
+
+.quote-block h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #007acc;
+}
+
+.llm-signal {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 1rem 1.5rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.llm-signal h3 {
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  color: #007acc;
+}
+
+.llm-signal ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.llm-signal li {
+  margin-bottom: 0.4rem;
+}
+
+
 
 /* ==== Button Styles ==== */
 .cta-button,
